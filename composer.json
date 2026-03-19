@@ -1,0 +1,64 @@
+{
+    "name": "agenticmorf/fluxui-chat",
+    "homepage": "https://github.com/AgenticMorf/fluxui-chat",
+    "support": {
+        "source": "https://github.com/AgenticMorf/fluxui-chat"
+    },
+    "description": "Flux UI chat interface for Laravel AI with streaming, model picker, and optional RAG",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "laravel/ai": "^0.2",
+        "laravel/framework": "^12.0",
+        "livewire/livewire": "^4.0",
+        "maize-tech/laravel-markable": "*"
+    },
+    "require-dev": {
+        "christhompsontldr/laravel-docit": "^1.0",
+        "laravel/pint": "^1.24",
+        "orchestra/pest-plugin-testbench": "^4.0",
+        "orchestra/testbench": "^10.0",
+        "pestphp/pest": "^4.0",
+        "pestphp/pest-plugin-laravel": "^4.0",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^12.0"
+    },
+    "suggest": {
+        "livewire/flux": "For Flux UI components",
+        "livewire/flux-pro": "For flux:composer component",
+        "agenticmorf/laravel-ai-model-manager": "For model picker in chat"
+    },
+    "autoload": {
+        "psr-4": {
+            "AgenticMorf\\FluxUIChat\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AgenticMorf\\FluxUIChat\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AgenticMorf\\FluxUIChat\\FluxUIChatServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "lint": "pint",
+        "analyse": "phpstan analyse",
+        "test": "bash -c 'cd ../.. && vendor/bin/pest plugins/fluxui-chat/tests --configuration=plugins/fluxui-chat/phpunit.xml'",
+        "test:coverage": "bash -c 'cd ../.. && XDEBUG_MODE=coverage vendor/bin/pest plugins/fluxui-chat/tests --configuration=plugins/fluxui-chat/phpunit.xml --coverage'",
+        "test:mutation": "bash -c 'cd ../.. && XDEBUG_MODE=coverage vendor/bin/pest plugins/fluxui-chat/tests --configuration=plugins/fluxui-chat/phpunit.xml --mutate --everything --covered-only --class=AgenticMorf\\\\FluxUIChat'",
+        "docit": "php vendor/bin/build-docs",
+        "test:type-coverage": "bash -c 'cd ../.. && vendor/bin/pest plugins/fluxui-chat/tests --configuration=plugins/fluxui-chat/phpunit.xml --type-coverage'"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable"
+}

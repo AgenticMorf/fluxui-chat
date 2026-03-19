@@ -1,0 +1,8 @@
+laravel: ../..
+
+providers:
+  - AgenticMorf\FluxUIChat\FluxUIChatServiceProvider
+
+migrations:
+  - ../../database/migrations
+  - ./database/migrations

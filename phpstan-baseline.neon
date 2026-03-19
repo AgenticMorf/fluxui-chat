@@ -1,0 +1,145 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Foundation\\Application\:\:routesAreCached\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/FluxUIChatServiceProvider.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Factory\:\:user\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Livewire/ChatsBookmarks.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\View\\View\:\:layout\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Livewire/ChatsBookmarks.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Factory\:\:user\(\)\.$#'
+			identifier: method.notFound
+			count: 3
+			path: src/Livewire/ChatsEdit.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\View\\View\:\:layout\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Livewire/ChatsEdit.php
+
+		-
+			message: '#^Access to an undefined property ChrisThompsonTLDR\\FluxUIChat\\Livewire\\ChatsIndex\:\:\$conversations\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Livewire/ChatsIndex.php
+
+		-
+			message: '#^Access to an undefined property ChrisThompsonTLDR\\FluxUIChat\\Livewire\\ChatsIndex\:\:\$distinctModels\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Livewire/ChatsIndex.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Factory\:\:user\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Livewire/ChatsIndex.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\View\\View\:\:layout\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Livewire/ChatsIndex.php
+
+		-
+			message: '#^Access to an undefined property ChrisThompsonTLDR\\FluxUIChat\\Livewire\\ChatsShow\:\:\$accessibleBases\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Livewire/ChatsShow.php
+
+		-
+			message: '#^Access to an undefined property ChrisThompsonTLDR\\FluxUIChat\\Livewire\\ChatsShow\:\:\$availableModels\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Livewire/ChatsShow.php
+
+		-
+			message: '#^Access to an undefined property ChrisThompsonTLDR\\FluxUIChat\\Livewire\\ChatsShow\:\:\$markState\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Livewire/ChatsShow.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Factory\:\:id\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Livewire/ChatsShow.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Factory\:\:user\(\)\.$#'
+			identifier: method.notFound
+			count: 16
+			path: src/Livewire/ChatsShow.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\View\\View\:\:layout\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Livewire/ChatsShow.php
+
+		-
+			message: '#^Call to an undefined static method ChrisThompsonTLDR\\FluxUIChat\\Models\\AgentConversationMessage\:\:findOrFail\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Livewire/ChatsShow.php
+
+		-
+			message: '#^Call to an undefined static method ChrisThompsonTLDR\\FluxUIChat\\Models\\AgentConversationMessage\:\:where\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Livewire/ChatsShow.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>email" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Livewire/ChatsShow.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Livewire/ChatsShow.php
+
+		-
+			message: '#^Variable \$deltaCount on left side of \?\? always exists and is not nullable\.$#'
+			identifier: nullCoalesce.variable
+			count: 1
+			path: src/Livewire/ChatsShow.php
+
+		-
+			message: '#^Access to constant STATUS_ERROR on an unknown class OpenTelemetry\\API\\Trace\\StatusCode\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Services/ChatService.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>model_name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Services/ChatService.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>title" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Services/ChatService.php
+
+		-
+			message: '#^Variable \$eventCount on left side of \?\? always exists and is not nullable\.$#'
+			identifier: nullCoalesce.variable
+			count: 3
+			path: src/Services/ChatService.php

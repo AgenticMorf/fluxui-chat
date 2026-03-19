@@ -1,0 +1,12 @@
+{
+  "order": ["index", "installation", "configuration", "usage"],
+  "labels": {
+    "index": "Guide",
+    "installation": "Installation",
+    "configuration": "Configuration",
+    "usage": "Usage"
+  },
+  "siteName": "Flux UI Chat",
+  "githubUrl": "https://github.com/AgenticMorf/fluxui-chat",
+  "editBaseUrl": "https://github.com/AgenticMorf/fluxui-chat/edit/main"
+}

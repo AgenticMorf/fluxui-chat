@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Run Pest via Sail (tests require PostgreSQL). Use: ./pest
+cd "$(dirname "$0")/../.." && ./vendor/bin/sail exec laravel.test php vendor/bin/pest plugins/fluxui-chat/tests --configuration=plugins/fluxui-chat/phpunit.xml "$@"
